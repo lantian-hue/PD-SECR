@@ -48,8 +48,8 @@ if torch.cuda.is_available():
     model.cuda()
 
 test_size = 0.2
-is_balance = False
-# is_balance = True
+#is_balance = False
+is_balance = True
 # 加载数据
 if is_balance:
     with open('./dataset/cnn_balance_data_'+str(test_size)+'.pkl', 'rb') as f:
