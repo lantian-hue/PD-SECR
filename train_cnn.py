@@ -26,8 +26,8 @@ batch_size = 20
 learning_rate = 0.0009
 epochs = 140
 
-is_balance = False
-# is_balance = True
+#is_balance = False
+is_balance = True
 
 # 加载数据
 if is_balance:
