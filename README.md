@@ -10,7 +10,8 @@ https://github.com/xuyl0104/blockchain_ponzi_detection
 
 https://drive.google.com/open?id=1izaOs4Mlp6dxdRMtRYQeUfkDhlqLf4Z6
              
-Code execution steps：
+#Code execution steps：
+
 （1）run prepare_dataset.py
 （2）run train-cnn.py
 （3）run train-RF.py:
