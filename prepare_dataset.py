@@ -21,16 +21,15 @@ if is_balance:
     features,labels=sme.fit_resample(features,labels)
     save = pd.DataFrame(features, columns=['return_rio', 'A_bal', 'investments_num','payments_num','Pr','maxpay','D_ind','GASLIMIT',
                                        'EXP','CALLDATALOAD','SLOAD','CALLER','LT','GAS','MOD','MSTORE'])
-    save1 = pd.DataFrame(labels, columns=['ponzi'])
-    save.to_csv("D:\\Thesis experiment\\dataset\\features1")
-    save1.to_csv("D:\\Thesis experiment\\dataset\\labels1")
+   # save1 = pd.DataFrame(labels, columns=['ponzi'])
+   # save.to_csv("D:\\Thesis experiment\\dataset\\features1")
+   # save1.to_csv("D:\\Thesis experiment\\dataset\\labels1")
 
 
 x_train, x_test, y_train, y_test = train_test_split(np.array(features), np.array(labels), test_size=test_size, shuffle=True, random_state=123)  #划分训练集和测试集
-if is_balance:
-#     sme =SMOTEENN(random_state=42)
-    sme = SMOTEENN(random_state=42)
-    x_train, y_train = sme.fit_resample(x_train, y_train)
+#if is_balance:
+#    sme = SMOTEENN(random_state=42)
+#   x_train, y_train = sme.fit_resample(x_train, y_train)
 
 x_train = np.expand_dims(x_train, axis=1)
 x_test = np.expand_dims(x_test, axis=1)#扩展维度
