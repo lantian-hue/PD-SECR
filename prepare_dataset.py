@@ -9,8 +9,8 @@ from imblearn.combine import SMOTEENN,SMOTETomek
 from imblearn.over_sampling import SVMSMOTE,SMOTEN,BorderlineSMOTE,SMOTENC
 
 test_size = 0.2
-is_balance = False
-# is_balance = True
+#is_balance = False
+is_balance = True
 # 数据处理
 data = pd.read_csv('./dataset/features2.csv')  #读取csv文件
 labels = data['ponzi']
